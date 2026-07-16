@@ -1,0 +1,210 @@
+/* Import Google Fonts (Sansita for headings) */
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap');
+
+/* Your Figma Color Palette */
+:root {
+  --cream: #F8F6F1;
+  --dark: #3b2f2a;
+  --muted: #6f6258;
+  --orange: #a5661e;
+  --navy: #36454f;
+  --navy-hover: #2a363e;
+  --btn-text: #d6cfc4;
+  --sage: #6f7d64;
+  --card-bg: #8c6f6f;
+}
+
+body{
+    font-family: 'Sansation', sans-serif;
+    background: var(--cream);
+    line-height: 1.5;
+    color: var(--dark);
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: var(--cream);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+nav a{
+    font-family: 'Sansita', sans-serif;
+    color: var(--muted);
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--orange);
+    font-weight: 400;
+}
+header img{
+    width: 4%;
+}
+header input, header button{
+    font-family: 'Sansation', sans-serif;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+}
+header input{
+    width: 250px;
+}
+header button{
+    width: 100px;
+    background-color: var(--navy);
+    color: var(--btn-text);
+}
+main{
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.about-container,
+.skills-container,
+.projects-container,
+.contact-container{
+    background: var(--cream);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1,h2{
+    font-family: 'Sansita', sans-serif;
+    color: var(--orange);
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 2rem;
+    border-bottom: 3px solid var(--dark);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+h2{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.about-container{
+    display: flex;
+}
+.skills-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.skills-card{
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+.skills-card dt{
+    font-family: 'Sansita', sans-serif;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.skills-card dd{
+    margin: 0;
+    color: #f2ece9;
+    font-size: 1rem;
+}
+.skills-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.projects-container article{
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    margin-bottom: 1.5rem;
+}
+.projects-container a{
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: bold;
+}
+.projects-container a:hover{
+    color: var(--orange);
+}
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-container label{
+    font-family: 'Sansita', sans-serif;
+    font-weight: bold;
+    color: var(--dark);
+    margin-top: 1rem;
+}
+.contact-container input,
+.contact-container textarea{
+    font-family: 'Sansation', sans-serif;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--dark);
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--dark);
+}
+.contact-container button{
+    font-family: 'Sansation', sans-serif;
+    margin-top: 1rem;
+    background-color: var(--navy);
+    color: var(--btn-text);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.contact-container button:hover{
+    background-color: var(--navy-hover);
+    color: var(--btn-text);
+}
+footer{
+    background-color: transparent;
+    color: var(--muted);
+    border-top: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+@media (max-width: 768px){
+    .header-container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: var(--cream);
+        padding: 1rem;
+        border-radius: 8px;
+    }
+    nav a{
+        font-size: 1rem;
+        display: block;
+        padding: 0.5rem;
+        border-radius: 6px;
+    }
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-container img{
+        width: 100%;
+        max-width: 250px;
+    }
+}

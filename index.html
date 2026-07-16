@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romeo Teyung - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Romeo Teyung</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home" class="about-container">
+      <div>
+        <h2>Hello,<br>My name is<br>Romeo Teyung</h2>
+        <p>Student at MIT with a passion for UI/UX and graphic design.</p>
+        <img src="images/Profilephoto.jpeg" alt="Romeo Teyung Profile Photo" width="200" height="200">
+        <br><br>
+        <button type="button" style="padding: 0.5rem 1rem; cursor: pointer;">About me</button>
+      </div>
+    </section>
+    
+    <section id="about" class="about-container">
+      <div>
+        <h2>About Me</h2>
+        <h3>Romeo Teyung - Designer</h3>
+        <p>
+          I'm a BIT student at MIT with a strong interest in UI/UX and graphic design.
+          I enjoy creating clean, user-friendly interfaces and visually engaging designs
+          that balance aesthetics with functionality. I'm passionate about creativity,
+          detail, and continuous growth as I work toward becoming a well-rounded designer.
+        </p>
+        <br>
+        <button type="button" style="padding: 0.5rem 1rem; cursor: pointer;">Skills</button>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        
+        <dl class="skills-card">
+          <dt>Figma</dt>
+          <dd>
+            Designing clean and intuitive user interfaces with a strong focus on usability,
+            layout, and modern design principles. I enjoy creating structured wireframes and
+            turning ideas into visually balanced digital experiences.
+          </dd>
+        </dl>
+
+        <dl class="skills-card">
+          <dt>Canva</dt>
+          <dd>
+            Creating visually engaging graphics and social media content with attention to
+            color harmony, typography, and composition. I focus on delivering designs that
+            are both creative and easy to understand.
+          </dd>
+        </dl>
+
+        <dl class="skills-card">
+          <dt>Video Editing</dt>
+          <dd>
+            Editing and refining videos with attention to pacing, storytelling, and smooth
+            transitions. I aim to create content that feels cohesive, engaging, and visually
+            appealing.
+          </dd>
+        </dl>
+
+      </div>
+    </section>
+
+    <section id="contacts" class="contact-container">
+      <h2>Get in Touch</h2>
+      <form>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+        
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4"></textarea>
+        
+        <button type="submit" style="margin-top: 1.5rem; padding: 0.8rem; background: #6a994e; color: white; border: none; border-radius: 6px; cursor: pointer;">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer style="text-align: center; padding: 2rem; color: #555;">
+    <p>Romeo Teyung</p>
+  </footer>
+
+</body>
+</html>
