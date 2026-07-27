@@ -6,11 +6,12 @@
   <title>Romeo Teyung - Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+<script src="Slider.js"></script>
 <body>
 
   <header>
     <h1>Romeo</h1>
-    
+  
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -26,7 +27,19 @@
       <div>
         <h2>Hello,<br>My name is<br>Romeo Teyung</h2>
         <p>Student at MIT with a passion for UI/UX and graphic design.</p>
-        <img src="images/Profile.jpeg" alt="Romeo Teyung Profile Photo" width="150" height="150">
+           <div class="slider" id="slider">
+      <div class="slider-track">
+        <div class="slide"><img src="images/Profile.jpeg" alt="Profile" width="100" height="100"></div>
+        <div class="slide"><img src="images/Angry.jpg" alt="Angry" width="100" height="100"></div>
+        <div class="slide"><img src="images/Flight.jpg" alt="Flight" width="100" height="100"></div>
+        <div class="slide"><img src="images/laugh.jpg" alt="laugh" width="100" height="100"></div>
+        <div class="slide"><img src="images/reggie.jpg" alt="reggie" width="100" height="100"></div>
+      </div>
+
+      <button class="slider-btn prev">&#10094;</button>
+      <button class="slider-btn next">&#10095;</button>
+      <div class="slider-dots"></div>
+    </div>
         <br><br>
         <button type="button" style="padding: 0.5rem 1rem; cursor: pointer;">About me</button>
       </div>
